@@ -1,8 +1,7 @@
 import Hero from "@/components/Hero";
 import Layout from "@/components/Layout";
-import Projects from "@/components/Projects";
+import Project from "@/components/Project";
 import Works from "@/components/Works";
-import MobileProjects from "@/components/MobileProjects";
 import styles from "@/styles/Home.module.css";
 
 export default function Home() {
@@ -10,8 +9,7 @@ export default function Home() {
     <Layout>
       <Hero />
       <Works />
-      <Projects />
-      <MobileProjects />
+      <Project />
     </Layout>
   );
 }
