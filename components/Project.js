@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import Layout from "@/components/Layout";
-import styles from "@/styles/Services.module.css";
+import styles from "@/styles/Project.module.css";
 import { motion } from "framer-motion";
 import ThemeContext from "@/context/ThemeContext";
 
@@ -35,7 +35,7 @@ const source = [
   },
 ];
 
-export default function Services() {
+export default function Project() {
   const [src, setSrc] = useState(source[0]);
   const { setBackground, setFont, setCursor } = useContext(ThemeContext);
 
