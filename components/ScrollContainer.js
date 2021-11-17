@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useLayoutEffect } from "react";
 import {
   setTransform,
   setStyles,
@@ -64,7 +64,7 @@ export default function Scroll(props) {
     startAnimation();
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     init();
     window.addEventListener("resize", resize);
     window.addEventListener("scroll", updateScroll);
