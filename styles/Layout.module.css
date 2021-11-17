@@ -1,0 +1,16 @@
+.container {
+  max-width: 1636px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+  transition: background-color 0.5s;
+  position: relative;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    min-height: initial;
+    height: max-content;
+  }
+}

@@ -1,0 +1,225 @@
+.container {
+  height: 100vh;
+  /* min-height: 700px; */
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 4.5rem;
+}
+
+.content {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.left {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+  z-index: 3;
+}
+
+.left h3 {
+  font-size: 2.3rem;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.links {
+  padding-left: 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.links li {
+  font-family: var(--font);
+  font-size: 3.3rem;
+  font-weight: 300;
+  transition: color 0.3s;
+  color: gray;
+  cursor: none;
+}
+
+.links:hover li {
+  color: gray;
+}
+
+.links:not(:hover) {
+  color: black;
+}
+
+.right {
+  right: 0;
+  width: 630px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.leftImage,
+.rightImage {
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: width 0.5s ease-out; */
+  opacity: 0;
+}
+
+.leftImage {
+  animation: leftAnim 1s cubic-bezier(0.14, 0.6, 0.41, 0.99) 0s 1 forwards;
+}
+
+.rightImage {
+  animation: rightAnim 1s cubic-bezier(0.14, 0.6, 0.41, 0.99) 0.05s 1 forwards;
+}
+
+.leftImage img,
+.rightImage img {
+  width: 250px;
+  height: 450px;
+  object-fit: cover;
+}
+
+@keyframes leftAnim {
+  0% {
+    width: 100px;
+    transform: translate(-140px, -80px);
+    opacity: 1;
+  }
+  100% {
+    width: 250px;
+    transform: translate(-140px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes rightAnim {
+  0% {
+    width: 100px;
+    transform: translate(140px, -140px);
+    opacity: 1;
+  }
+  100% {
+    width: 250px;
+    transform: translate(140px, -80px);
+    opacity: 1;
+  }
+}
+
+.one,
+.two,
+.three {
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.one {
+  z-index: 1;
+  animation: oneAnim 1s cubic-bezier(0.14, 0.6, 0.41, 0.99) 0s 1 forwards;
+}
+
+.two {
+  animation: twoAnim 1s cubic-bezier(0.14, 0.6, 0.41, 0.99) 0.1s 1 forwards;
+}
+
+.three {
+  z-index: 2;
+  animation: threeAnim 1s cubic-bezier(0.14, 0.6, 0.41, 0.99) 0.15s 1 forwards;
+}
+
+.one img,
+.two img,
+.three img {
+  width: 280px;
+  height: 400px;
+  object-fit: cover;
+}
+
+@keyframes oneAnim {
+  0% {
+    width: 100px;
+    transform: translate(-140px, -100px);
+    opacity: 1;
+  }
+  100% {
+    width: 280px;
+    transform: translate(-140px, -60px);
+    opacity: 1;
+  }
+}
+
+@keyframes twoAnim {
+  0% {
+    width: 100px;
+    transform: translate(130px, -240px);
+    opacity: 1;
+  }
+  100% {
+    width: 280px;
+    transform: translate(130px, -140px);
+    opacity: 1;
+  }
+}
+
+@keyframes threeAnim {
+  0% {
+    width: 100px;
+    transform: translate(40px, -20px);
+    opacity: 1;
+  }
+  100% {
+    width: 280px;
+    transform: translate(40px, 70px);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  .content {
+    width: 90%;
+  }
+
+  .links li {
+    font-size: 3rem;
+  }
+
+  .right {
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .container {
+    align-items: center;
+  }
+
+  .left {
+    margin-top: 3rem;
+  }
+
+  .links {
+    padding: 0;
+  }
+
+  .links li {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
