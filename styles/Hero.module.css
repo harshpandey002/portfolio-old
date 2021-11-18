@@ -40,6 +40,11 @@
   color: transparent;
   -webkit-text-stroke: 1px #000;
   opacity: 0;
+  transition: color 0.3s;
+}
+
+.word h1:hover {
+  color: initial;
 }
 
 .word:nth-child(1) h1 {
