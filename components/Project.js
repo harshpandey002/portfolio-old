@@ -52,6 +52,7 @@ export default function Project() {
       animation.start("initial");
     }
   });
+
   // TODO change names
   const test = {
     initial: {
