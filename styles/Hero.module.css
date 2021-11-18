@@ -2,89 +2,59 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .content {
-  width: 85%;
   display: flex;
   flex-direction: column;
+  width: 85%;
   margin: 0 auto;
 }
 
 .top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.heading {
-  width: 70%;
-}
-
-.heading div {
-  overflow: hidden;
-}
-
-.heading h1 {
-  font-family: var(--font);
-  font-size: 2.5rem;
-  opacity: 0;
-  animation: textAnim 1.3s ease 0.8s normal forwards;
-}
-
-.squareImg {
-  background-color: gray;
-  width: 35%;
-  height: 35vh;
-  max-height: 260px;
-  opacity: 0;
-  transform-origin: top;
-  animation: imageAnim 1.3s ease-out 0.6s normal forwards;
-}
-
-.squareImg > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.bottom {
+.word {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.rectangleImg {
-  background-color: gray;
-  width: 45%;
-  height: 40vh;
-  max-height: 260px;
-  opacity: 0;
-  transform-origin: top;
-  animation: imageAnim 1.3s ease-out 1s normal forwards;
-}
-
-.rectangleImg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.text {
-  text-align: left;
-  width: 40%;
-  font-size: 1.3rem;
-  line-height: 1.2;
-}
-
-.text div {
-  display: inline-block;
+  justify-content: center;
+  height: 400px;
   overflow: hidden;
 }
 
-.text div p {
-  margin-right: 5px;
+.word:nth-child(2) {
+  padding: 0 3rem;
+}
+
+.word span {
+  overflow: hidden;
+}
+
+.word h1 {
+  font-size: 5.4vw;
+  text-shadow: none;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  opacity: 0;
+  animation: textAnim 1.3s ease 0s normal forwards;
+}
+
+.wrapper {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.overflow p {
+  line-height: 1.2;
+  font-size: 1.5rem;
   opacity: 0;
   animation: textAnim 1.3s ease 0.9s normal forwards;
 }
@@ -92,11 +62,11 @@
 @keyframes textAnim {
   0% {
     opacity: 1;
-    transform: translateY(80px) rotate(-8deg);
+    transform: translateY(80px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px) rotate(0);
+    transform: translateY(0px);
   }
 }
 
@@ -129,13 +99,6 @@
     gap: 2rem;
     justify-content: center;
   }
-  .squareImg {
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-    transform-origin: center;
-    animation: scaleAnim 1.3s ease-out 0.6s normal forwards;
-  }
 
   .content {
     width: 85%;
@@ -159,10 +122,6 @@
 
   .bottom {
     display: initial;
-  }
-
-  .rectangleImg {
-    display: none;
   }
 
   .text {
