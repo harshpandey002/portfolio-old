@@ -1,3 +1,4 @@
+import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Layout from "@/components/Layout";
 import Project from "@/components/Project";
@@ -10,8 +11,9 @@ export default function Home() {
     <Layout>
       <Hero />
       <Works />
-      <Project />
       <Stack />
+      <Project />
+      <Experience />
     </Layout>
   );
 }
