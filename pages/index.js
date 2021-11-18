@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Layout from "@/components/Layout";
@@ -14,6 +15,10 @@ export default function Home() {
       <Stack />
       <Project />
       <Experience />
+      <div className={styles.resume}>
+        <button>Resume</button>
+      </div>
+      {/* <Contact /> */}
     </Layout>
   );
 }

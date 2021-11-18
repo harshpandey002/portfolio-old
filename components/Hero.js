@@ -24,7 +24,9 @@ export default function Hero() {
         <div ref={ref} className={styles.top}>
           <div className={styles.word}>
             <span>
-              <h1>UI / UX</h1>
+              <h1>
+                UI <span>/</span> UX
+              </h1>
             </span>
           </div>
           <div className={styles.word}>

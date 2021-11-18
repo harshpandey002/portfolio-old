@@ -38,7 +38,7 @@ export default function Header() {
           <li name="Projects">Projects</li>
           <li name="Tech Stack">Tech Stack</li>
           <li name="Experience">Experience</li>
-          <li name="Contact">Contact</li>
+          <li name="Resume">Resume</li>
         </ul>
       </nav>
     </div>
