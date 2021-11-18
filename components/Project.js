@@ -131,7 +131,7 @@ export default function Project() {
     };
 
     e.target.style.color = "gray";
-    setBackground("");
+    setBackground("white");
     setFont("black");
     setSrc(source[0]);
     setCursor({ style });

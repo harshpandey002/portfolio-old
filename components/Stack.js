@@ -1,11 +1,23 @@
+import { useContext } from "react";
 import styles from "@/styles/Stack.module.css";
+import ScrollTrigger from "react-scroll-trigger";
+import ThemeContext from "@/context/ThemeContext";
 
 export default function Stack() {
+  const { setBackground, setFont } = useContext(ThemeContext);
+
+  const handleColor = () => {
+    setBackground("white");
+    setFont("black");
+  };
+
   return (
     <div className={styles.container}>
-      <div className={styles.heading}>
-        <h2>Technology Stack</h2>
-      </div>
+      <ScrollTrigger onEnter={handleColor}>
+        <div className={styles.heading}>
+          <h2>Technology Stack</h2>
+        </div>
+      </ScrollTrigger>
       <div className={styles.content}>
         <div className={styles.block}>
           <h3>Front-End</h3>

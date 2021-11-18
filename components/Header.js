@@ -3,7 +3,7 @@ import styles from "@/styles/Header.module.css";
 import ThemeContext from "@/context/ThemeContext";
 
 export default function Header() {
-  const { setCursor } = useContext(ThemeContext);
+  const { setCursor, setBackground, setFont } = useContext(ThemeContext);
 
   const mouseOver = () => {
     const style = {
@@ -12,12 +12,13 @@ export default function Header() {
       mixBlendMode: "difference",
     };
 
+    setBackground("");
+    setFont("black");
     setCursor({ style });
   };
 
   const mouseOut = () => {
     const style = {};
-
     setCursor({ style });
   };
 
