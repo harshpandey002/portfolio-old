@@ -9,7 +9,7 @@
   flex-direction: column;
   width: 85%;
   margin: 0 auto;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   gap: 6rem;
 }
 
@@ -58,6 +58,7 @@
 }
 
 .wrapper {
+  margin-left: auto;
   width: 70%;
   display: flex;
   flex-wrap: wrap;
@@ -70,7 +71,7 @@
 
 .overflow p {
   line-height: 1.2;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   opacity: 0;
   animation: textAnim 1.3s ease 0.4s normal forwards;
 }
@@ -138,10 +139,5 @@
 
   .bottom {
     display: initial;
-  }
-
-  .text {
-    width: 90%;
-    font-size: 1.1rem;
   }
 }

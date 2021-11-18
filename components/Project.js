@@ -1,7 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import Layout from "@/components/Layout";
 import styles from "@/styles/Project.module.css";
-import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import ThemeContext from "@/context/ThemeContext";
 
 const source = [
@@ -39,9 +40,40 @@ export default function Project() {
   const [src, setSrc] = useState(source[0]);
   const { setBackground, setFont, setCursor } = useContext(ThemeContext);
 
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+  const animation = useAnimation();
+
   useEffect(() => {
-    setBackground("white");
-  }, []);
+    if (inView) {
+      animation.start("animate");
+    } else {
+      animation.start("initial");
+    }
+  });
+  // TODO change names
+  const test = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: { staggerChildren: 0.04, staggerDirection: 1 },
+    },
+  };
+
+  const item = {
+    initial: {
+      y: 80,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.5, type: "ease-out" },
+    },
+  };
 
   const mouseOver = (e, x) => {
     const fontColor = "black";
@@ -94,12 +126,12 @@ export default function Project() {
 
   const mouseOut = (e) => {
     const style = {
-      width: "10px",
-      height: "10px",
+      width: "5px",
+      height: "5px",
     };
 
     e.target.style.color = "gray";
-    setBackground("white");
+    setBackground("");
     setFont("black");
     setSrc(source[0]);
     setCursor({ style });
@@ -111,23 +143,49 @@ export default function Project() {
         <div className={styles.content}>
           <div className={styles.left}>
             <h3>Our Services</h3>
-            <ul className={styles.links}>
-              <li onMouseOver={(e) => mouseOver(e, 1)} onMouseOut={mouseOut}>
+            <motion.ul
+              ref={ref}
+              variants={test}
+              initial="initial"
+              animate={animation}
+              className={styles.links}
+            >
+              <motion.li
+                variants={item}
+                onMouseOver={(e) => mouseOver(e, 1)}
+                onMouseOut={mouseOut}
+              >
                 Website Development
-              </li>
-              <li onMouseOver={(e) => mouseOver(e, 2)} onMouseOut={mouseOut}>
+              </motion.li>
+              <motion.li
+                variants={item}
+                onMouseOver={(e) => mouseOver(e, 2)}
+                onMouseOut={mouseOut}
+              >
                 UI/UX Design
-              </li>
-              <li onMouseOver={(e) => mouseOver(e, 3)} onMouseOut={mouseOut}>
+              </motion.li>
+              <motion.li
+                variants={item}
+                onMouseOver={(e) => mouseOver(e, 3)}
+                onMouseOut={mouseOut}
+              >
                 Business Consulting
-              </li>
-              <li onMouseOver={(e) => mouseOver(e, 4)} onMouseOut={mouseOut}>
+              </motion.li>
+              <motion.li
+                variants={item}
+                onMouseOver={(e) => mouseOver(e, 4)}
+                onMouseOut={mouseOut}
+              >
                 Digital Marketing
-              </li>
-              <li onMouseOver={(e) => mouseOver(e, 5)} onMouseOut={mouseOut}>
+              </motion.li>
+              <motion.li
+                variants={item}
+                onMouseOver={(e) => mouseOver(e, 5)}
+                onMouseOut={mouseOut}
+              >
                 Something Else
-              </li>
-            </ul>
+              </motion.li>
+            </motion.ul>
           </div>
           {!!src.three ? <ThreeImage src={src} /> : <TwoImage src={src} />}
         </div>

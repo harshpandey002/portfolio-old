@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import ThemeContext from "@/context/ThemeContext";
 
 export default function Works() {
-  const { setBackground } = useContext(ThemeContext);
+  const { setBackground, setFont } = useContext(ThemeContext);
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -23,7 +23,8 @@ export default function Works() {
 
   useEffect(() => {
     if (ThemeInView) {
-      setBackground("#cad9c3");
+      setBackground("#131313");
+      setFont("#ffffff");
     }
   }, [ThemeInView]);
 
@@ -53,9 +54,9 @@ export default function Works() {
     <div className={styles.container}>
       <div className={styles.content}>
         <div ref={theme} className={styles.scroller} />
-        <Parallax y={[-35, 20]}>
+        <Parallax y={[-65, 15]}>
           <div className={styles.heading}>
-            <h1>Our Works</h1>
+            <h1>Featured Works</h1>
           </div>
         </Parallax>
         <motion.div

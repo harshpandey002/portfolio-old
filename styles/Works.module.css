@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  height: 130vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@
 
 .heading h1 {
   font-family: var(--font);
-  font-size: 6vw;
+  font-size: 5vw;
   color: #a1a1a1;
 }
 
