@@ -8,8 +8,9 @@ export default function Experience() {
       </div>
       <div className={styles.content}>
         <div className={styles.block}>
-          <div>
+          <div className={styles.detail}>
             <h3>EduCompanion</h3>
+            <p>Jul 2021 - Nov 2021</p>
           </div>
           <p>
             I use Nextjs for all my projects as it is the most advanced
@@ -19,8 +20,9 @@ export default function Experience() {
           </p>
         </div>
         <div className={styles.block}>
-          <div>
+          <div className={styles.detail}>
             <h3>Beyond Pinks</h3>
+            <p>Sep 2021 - Nov 2021</p>
           </div>
           <p>
             I use Nodejs, Expressjs and Mongoose as my back-end technologies.

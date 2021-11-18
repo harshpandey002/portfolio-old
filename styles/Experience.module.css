@@ -29,8 +29,14 @@
   justify-content: space-around;
 }
 
-.block h3 {
+.detail h3 {
   font-weight: 500;
+}
+
+.detail p {
+  width: 100% !important;
+  font-size: 1rem !important;
+  color: gray;
 }
 
 .block p {

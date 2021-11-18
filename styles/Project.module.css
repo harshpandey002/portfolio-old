@@ -87,6 +87,23 @@
   object-fit: cover;
 }
 
+.OneImg {
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: width 0.5s ease-out; */
+  opacity: 0;
+  animation: OneAnim 1s cubic-bezier(0.14, 0.6, 0.41, 0.99) 0s 1 forwards;
+}
+
+.OneImg img {
+  width: 600px;
+  height: 350px;
+  object-fit: cover;
+}
+
 @keyframes leftAnim {
   0% {
     width: 100px;
@@ -109,6 +126,20 @@
   100% {
     width: 250px;
     transform: translate(140px, -80px);
+    opacity: 1;
+  }
+}
+
+@keyframes OneAnim {
+  0% {
+    width: 200px;
+    opacity: 1;
+    transform: translate(-100px, -100px);
+  }
+
+  100% {
+    width: 600px;
+    transform: translate(-100px, 20px);
     opacity: 1;
   }
 }

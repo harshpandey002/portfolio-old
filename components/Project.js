@@ -188,6 +188,7 @@ export default function Project() {
             </motion.ul>
           </div>
           {!!src.three ? <ThreeImage src={src} /> : <TwoImage src={src} />}
+          {!src.one && <OneImage />}
         </div>
       </div>
     </Layout>
@@ -222,6 +223,19 @@ const ThreeImage = ({ src }) => {
       </div>
       <div className={styles.three}>
         <img src={src.three} alt="" />
+      </div>
+    </div>
+  );
+};
+
+const OneImage = () => {
+  return (
+    <div className={styles.right}>
+      <div className={styles.OneImg}>
+        <img
+          src="https://images.unsplash.com/photo-1635868713754-22daa61bc2c1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=350&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNzI0NjMxMA&ixlib=rb-1.2.1&q=80&w=600"
+          alt=""
+        />
       </div>
     </div>
   );
