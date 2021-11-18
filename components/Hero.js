@@ -8,12 +8,13 @@ export default function Hero() {
     "I’m an individual with solid design and development expertise. I build mordern websites with premium animations and transitions.";
   const bigTxt = "UI / UX Designer. Web Developer. Freelancer.";
   let i = -1;
-  const { setBackground } = useContext(ThemeContext);
+  const { setBackground, setFont } = useContext(ThemeContext);
   const [ref, inView] = useInView();
 
   useEffect(() => {
     if (inView) {
-      setBackground("#0000");
+      setBackground("");
+      setFont("black");
     }
   }, [inView]);
 
