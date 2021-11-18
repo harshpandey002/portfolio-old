@@ -87,7 +87,7 @@ export default function Project() {
     };
 
     switch (e.target.innerHTML) {
-      case "Website Development":
+      case "Piggy":
         backgroundColor = "#131313";
         fontColor = "#ffffff";
         // style = {
@@ -97,13 +97,13 @@ export default function Project() {
         //   mixBlendMode: "difference",
         // };
         break;
-      case "UI/UX Design":
+      case "EduCompanion":
         break;
-      case "Business Consulting":
+      case "Beyond Pinks":
         backgroundColor = "#ffffff";
 
         break;
-      case "Digital Marketing":
+      case "E-Medic":
         backgroundColor = "#131313";
         fontColor = "#ffffff";
         // style = {
@@ -113,7 +113,7 @@ export default function Project() {
         //   mixBlendMode: "difference",
         // };
         break;
-      case "Something Else":
+      case "Protege":
         break;
     }
 
@@ -142,7 +142,7 @@ export default function Project() {
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.left}>
-            <h3>Our Services</h3>
+            <h3>Featured Projects</h3>
             <motion.ul
               ref={ref}
               variants={test}
@@ -155,35 +155,35 @@ export default function Project() {
                 onMouseOver={(e) => mouseOver(e, 1)}
                 onMouseOut={mouseOut}
               >
-                Website Development
+                Piggy
               </motion.li>
               <motion.li
                 variants={item}
                 onMouseOver={(e) => mouseOver(e, 2)}
                 onMouseOut={mouseOut}
               >
-                UI/UX Design
+                EduCompanion
               </motion.li>
               <motion.li
                 variants={item}
                 onMouseOver={(e) => mouseOver(e, 3)}
                 onMouseOut={mouseOut}
               >
-                Business Consulting
+                Beyond Pinks
               </motion.li>
               <motion.li
                 variants={item}
                 onMouseOver={(e) => mouseOver(e, 4)}
                 onMouseOut={mouseOut}
               >
-                Digital Marketing
+                E-Medic
               </motion.li>
               <motion.li
                 variants={item}
                 onMouseOver={(e) => mouseOver(e, 5)}
                 onMouseOut={mouseOut}
               >
-                Something Else
+                Protege
               </motion.li>
             </motion.ul>
           </div>
