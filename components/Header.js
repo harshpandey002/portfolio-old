@@ -26,7 +26,7 @@ export default function Header() {
     <div className={styles.container}>
       <nav>
         <div className={styles.logo}>
-          <h1>Sevic</h1>
+          <h1>Harsh Pandey</h1>
         </div>
 
         <ul

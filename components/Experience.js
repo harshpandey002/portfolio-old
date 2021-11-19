@@ -1,12 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import styles from "@/styles/Experience.module.css";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import ScrollTrigger from "react-scroll-trigger";
+import ThemeContext from "@/context/ThemeContext";
 
 export default function Experience() {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
+  const { setBackground, setFont } = useContext(ThemeContext);
 
   const animation = useAnimation();
 
@@ -30,21 +33,26 @@ export default function Experience() {
 
   const item = {
     initial: {
-      y: 80,
-      opacity: 0,
+      y: "100%",
     },
     animate: {
       y: 0,
-      opacity: 1,
       transition: { duration: 0.5, type: "ease-out" },
     },
   };
 
+  const handleScroll = () => {
+    setBackground("white");
+    setFont("black");
+  };
+
   return (
     <div className={styles.container}>
-      <div className={styles.heading}>
-        <h2>Experience</h2>
-      </div>
+      <ScrollTrigger onEnter={handleScroll}>
+        <div className={styles.heading}>
+          <h2>Experience</h2>
+        </div>
+      </ScrollTrigger>
       <motion.div
         ref={ref}
         variants={test}

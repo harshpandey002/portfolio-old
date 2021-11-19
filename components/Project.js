@@ -66,12 +66,10 @@ export default function Project() {
 
   const item = {
     initial: {
-      y: 80,
-      opacity: 0,
+      y: "100%",
     },
     animate: {
       y: 0,
-      opacity: 1,
       transition: { duration: 0.5, type: "ease-out" },
     },
   };
@@ -139,60 +137,58 @@ export default function Project() {
   };
 
   return (
-    <Layout>
-      <div className={styles.container}>
-        <div className={styles.content}>
-          <div className={styles.left}>
-            <h3>Featured Projects</h3>
-            <motion.ul
-              ref={ref}
-              variants={test}
-              initial="initial"
-              animate={animation}
-              className={styles.links}
+    <div className={styles.container}>
+      <div className={styles.content}>
+        <div className={styles.left}>
+          <h3>Featured Projects</h3>
+          <motion.ul
+            ref={ref}
+            variants={test}
+            initial="initial"
+            animate={animation}
+            className={styles.links}
+          >
+            <motion.li
+              variants={item}
+              onMouseOver={(e) => mouseOver(e, 1)}
+              onMouseOut={mouseOut}
             >
-              <motion.li
-                variants={item}
-                onMouseOver={(e) => mouseOver(e, 1)}
-                onMouseOut={mouseOut}
-              >
-                Piggy
-              </motion.li>
-              <motion.li
-                variants={item}
-                onMouseOver={(e) => mouseOver(e, 2)}
-                onMouseOut={mouseOut}
-              >
-                EduCompanion
-              </motion.li>
-              <motion.li
-                variants={item}
-                onMouseOver={(e) => mouseOver(e, 3)}
-                onMouseOut={mouseOut}
-              >
-                Beyond Pinks
-              </motion.li>
-              <motion.li
-                variants={item}
-                onMouseOver={(e) => mouseOver(e, 4)}
-                onMouseOut={mouseOut}
-              >
-                E-Medic
-              </motion.li>
-              <motion.li
-                variants={item}
-                onMouseOver={(e) => mouseOver(e, 5)}
-                onMouseOut={mouseOut}
-              >
-                Protege
-              </motion.li>
-            </motion.ul>
-          </div>
-          {!!src.three ? <ThreeImage src={src} /> : <TwoImage src={src} />}
-          {!src.one && <OneImage />}
+              Piggy
+            </motion.li>
+            <motion.li
+              variants={item}
+              onMouseOver={(e) => mouseOver(e, 2)}
+              onMouseOut={mouseOut}
+            >
+              EduCompanion
+            </motion.li>
+            <motion.li
+              variants={item}
+              onMouseOver={(e) => mouseOver(e, 3)}
+              onMouseOut={mouseOut}
+            >
+              Beyond Pinks
+            </motion.li>
+            <motion.li
+              variants={item}
+              onMouseOver={(e) => mouseOver(e, 4)}
+              onMouseOut={mouseOut}
+            >
+              E-Medic
+            </motion.li>
+            <motion.li
+              variants={item}
+              onMouseOver={(e) => mouseOver(e, 5)}
+              onMouseOut={mouseOut}
+            >
+              Protege
+            </motion.li>
+          </motion.ul>
         </div>
+        {!!src.three ? <ThreeImage src={src} /> : <TwoImage src={src} />}
+        {!src.one && <OneImage />}
       </div>
-    </Layout>
+    </div>
   );
 }
 

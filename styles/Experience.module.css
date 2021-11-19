@@ -55,3 +55,9 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 730px) {
+  .content {
+    width: 90%;
+  }
+}

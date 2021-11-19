@@ -3,6 +3,7 @@ import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Layout from "@/components/Layout";
 import Project from "@/components/Project";
+import ProjectMob from "@/components/ProjectMob";
 import Stack from "@/components/Stack";
 import Works from "@/components/Works";
 import styles from "@/styles/Home.module.css";
@@ -14,6 +15,7 @@ export default function Home() {
       <Works />
       <Stack />
       <Project />
+      <ProjectMob />
       <Experience />
       <div className={styles.resume}>
         <button>Resume</button>

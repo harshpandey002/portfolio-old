@@ -236,6 +236,13 @@
   }
 }
 
+@media only screen and (max-width: 730px) {
+  .container {
+    display: none;
+  }
+}
+
+/* 
 @media only screen and (max-width: 680px) {
   .container {
     align-items: center;
@@ -253,4 +260,4 @@
     font-size: 2rem;
     cursor: pointer;
   }
-}
+} */

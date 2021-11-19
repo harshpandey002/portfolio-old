@@ -1,16 +1,13 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState } from "react";
 import styles from "@/styles/Works.module.css";
 import { Parallax } from "react-scroll-parallax";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import ThemeContext from "@/context/ThemeContext";
 
 export default function Works() {
-  const { setBackground, setFont } = useContext(ThemeContext);
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-  const [theme, ThemeInView] = useInView();
 
   const animation = useAnimation();
   useEffect(() => {
@@ -20,13 +17,6 @@ export default function Works() {
       animation.start("initial");
     }
   });
-
-  useEffect(() => {
-    if (ThemeInView) {
-      setBackground("#131313");
-      setFont("#ffffff");
-    }
-  }, [ThemeInView]);
 
   const test = {
     initial: {
@@ -53,7 +43,7 @@ export default function Works() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <div ref={theme} className={styles.scroller} />
+        <div className={styles.scroller} />
         <Parallax y={[-65, 15]}>
           <div className={styles.heading}>
             <h1>Featured Works</h1>
