@@ -9,7 +9,7 @@ export default function Menu({ isOpen }) {
           <li>Projects</li>
           <li>Tech Stack</li>
           <li>Experience</li>
-          <li>Resume</li>
+          <li>Contact</li>
         </ul>
       </div>
     </div>

@@ -41,7 +41,7 @@ export default function Header() {
           <li name="Projects">Projects</li>
           <li name="Tech Stack">Tech Stack</li>
           <li name="Experience">Experience</li>
-          <li name="Resume">Resume</li>
+          <li name="Resume">Contact</li>
         </ul>
 
         <div className={`${styles.menu} ${isOpen && `${styles.color}`} `}>
