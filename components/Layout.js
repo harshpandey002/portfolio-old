@@ -3,6 +3,7 @@ import styles from "@/styles/Layout.module.css";
 import Header from "./Header";
 import { useContext } from "react";
 import ThemeContext from "@/context/ThemeContext";
+import Footer from "./Footer";
 
 const Layout = ({ title, keywords, description, children }) => {
   const { background, font } = useContext(ThemeContext);
@@ -24,6 +25,8 @@ const Layout = ({ title, keywords, description, children }) => {
       <Header />
 
       <div className={styles.container}>{children}</div>
+
+      <Footer />
     </div>
   );
 };
