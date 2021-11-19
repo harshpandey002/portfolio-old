@@ -11,28 +11,26 @@ const source = [
     two: "",
   },
   {
-    one: "https://images.unsplash.com/photo-1636216713187-c5031b0a441d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjc5NjY4NQ&ixlib=rb-1.2.1&q=80&w=300",
-    two: "https://images.unsplash.com/photo-1635099065551-41a013869020?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjc5NjYyMQ&ixlib=rb-1.2.1&q=80&w=300",
+    one: "https://gcdn.pbrd.co/images/77GVE0hX4T3B.png?o=1",
+    two: "https://gcdn.pbrd.co/images/iEdRPNhrIDHc.png?o=1",
   },
   {
-    one: "https://images.unsplash.com/photo-1635589843460-c2b760341882?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjc5NjA0Mw&ixlib=rb-1.2.1&q=80&w=300",
-    two: "https://images.unsplash.com/photo-1634588174678-4672a6bcd830?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjc5NjAxOQ&ixlib=rb-1.2.1&q=80&w=300",
-    three:
-      "https://images.unsplash.com/photo-1635939236098-855a6cf1c3e9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjc5NjgzOQ&ixlib=rb-1.2.1&q=80&w=300",
+    one: "https://gcdn.pbrd.co/images/YBEyPw37XaNu.png?o=1",
+    two: "https://gcdn.pbrd.co/images/0avLfa6ptZxi.png?o=1",
+    three: "https://gcdn.pbrd.co/images/0naEnsad1BTk.png?o=1",
   },
   {
-    one: "https://images.unsplash.com/photo-1634433480491-07e21ad0af5a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjc5MDY0NQ&ixlib=rb-1.2.1&q=80&w=300",
-    two: "https://images.unsplash.com/photo-1634113755405-4c34d7abcbb7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjc5MDY2NA&ixlib=rb-1.2.1&q=80&w=300",
+    one: "https://gcdn.pbrd.co/images/aGaudXoqLun7.png?o=1",
+    two: "https://gcdn.pbrd.co/images/9T0AB5MWDjYa.png?o=1",
   },
   {
-    one: "https://images.unsplash.com/photo-1634749724963-721227794e53?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjc5NTk2Ng&ixlib=rb-1.2.1&q=80&w=300",
-    two: "https://images.unsplash.com/photo-1635425031670-4928f00e517c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjc5NTk5Nw&ixlib=rb-1.2.1&q=80&w=300",
-    three:
-      "https://images.unsplash.com/photo-1634433480491-07e21ad0af5a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjc5MDY0NQ&ixlib=rb-1.2.1&q=80&w=300",
+    one: "https://gcdn.pbrd.co/images/fQ5NKyssw0Mh.png?o=1",
+    two: "https://gcdn.pbrd.co/images/mrOiLZtymoKy.png?o=1",
+    three: "https://gcdn.pbrd.co/images/f8WB4JKgUPcW.png?o=1",
   },
   {
-    one: "https://images.unsplash.com/photo-1635794275221-4d8cf075d461?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjgxODA4NA&ixlib=rb-1.2.1&q=80&w=300",
-    two: "https://images.unsplash.com/photo-1635362877765-9d6ac192b996?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjgxODA0Nw&ixlib=rb-1.2.1&q=80&w=300",
+    one: "https://gcdn.pbrd.co/images/d9nrFrSL5APV.png?o=1",
+    two: "https://gcdn.pbrd.co/images/phkXjLNvCHwj.png?o=1",
   },
 ];
 
@@ -87,16 +85,10 @@ export default function Project() {
 
     switch (e.target.innerHTML) {
       case "Piggy":
-        backgroundColor = "#131313";
-        fontColor = "#ffffff";
-        // style = {
-        //   width: "35px",
-        //   height: "35px",
-        //   backgroundColor: "white",
-        //   mixBlendMode: "difference",
-        // };
         break;
       case "EduCompanion":
+        backgroundColor = "#131313";
+        fontColor = "#ffffff";
         break;
       case "Beyond Pinks":
         backgroundColor = "#ffffff";
@@ -188,7 +180,7 @@ export default function Project() {
           </motion.ul>
         </div>
         {!!src.three ? <ThreeImage src={src} /> : <TwoImage src={src} />}
-        {!src.one && <OneImage />}
+        {/* {!src.one && <OneImage />} */}
       </div>
     </div>
   );
@@ -227,15 +219,21 @@ const ThreeImage = ({ src }) => {
   );
 };
 
-const OneImage = () => {
-  return (
-    <div className={styles.right}>
-      <div className={styles.OneImg}>
-        <img
-          src="https://images.unsplash.com/photo-1635868713754-22daa61bc2c1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=350&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNzI0NjMxMA&ixlib=rb-1.2.1&q=80&w=600"
-          alt=""
-        />
-      </div>
-    </div>
-  );
-};
+// const OneImage = () => {
+//   return (
+//     <div className={styles.right}>
+//       <div className={styles.leftImage}>
+//         <img
+//           src="https://images.unsplash.com/photo-1636216713187-c5031b0a441d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjc5NjY4NQ&ixlib=rb-1.2.1&q=80&w=300"
+//           alt=""
+//         />
+//       </div>
+//       <div className={styles.rightImage}>
+//         <img
+//           src="https://images.unsplash.com/photo-1635099065551-41a013869020?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjc5NjYyMQ&ixlib=rb-1.2.1&q=80&w=300"
+//           alt=""
+//         />
+//       </div>
+//     </div>
+//   );
+// };
