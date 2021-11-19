@@ -40,7 +40,7 @@
   font-family: var(--font);
   font-size: 3.3rem;
   font-weight: 300;
-  transition: color 0.3s;
+  transition: all 0.3s;
   color: gray;
   cursor: none;
 }
