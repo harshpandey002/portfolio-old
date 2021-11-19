@@ -51,7 +51,9 @@ export default function Stack() {
     <div className={styles.container}>
       <ScrollTrigger onEnter={handleColor}>
         <div className={styles.heading}>
-          <h2>Technology Stack</h2>
+          <h2>
+            <a id="stack">Technology Stack</a>
+          </h2>
         </div>
       </ScrollTrigger>
       <motion.div

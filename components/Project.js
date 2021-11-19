@@ -140,7 +140,9 @@ export default function Project() {
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.left}>
-          <h3>Featured Projects</h3>
+          <h3>
+            <a id="projects">Featured Projects</a>
+          </h3>
           <motion.ul
             ref={ref}
             variants={test}

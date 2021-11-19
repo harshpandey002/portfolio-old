@@ -44,6 +44,17 @@
   font-size: 1.4rem;
 }
 
+.resume {
+  border: none;
+  outline: none;
+  width: 180px;
+  background-color: #131313;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.4rem;
+  cursor: none;
+}
+
 @media only screen and (max-width: 940px) {
   .block {
     flex-direction: column;

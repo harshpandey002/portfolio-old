@@ -46,7 +46,9 @@ export default function Works() {
         <div className={styles.scroller} />
         <Parallax y={[-65, 15]}>
           <div className={styles.heading}>
-            <h1>Featured Works</h1>
+            <h1>
+              <a id="work">Featured Works</a>
+            </h1>
           </div>
         </Parallax>
         <motion.div

@@ -50,7 +50,9 @@ export default function Experience() {
     <div className={styles.container}>
       <ScrollTrigger onEnter={handleScroll}>
         <div className={styles.heading}>
-          <h2>Experience</h2>
+          <h2>
+            <a id="experience">Experience</a>
+          </h2>
         </div>
       </ScrollTrigger>
       <motion.div
@@ -63,7 +65,7 @@ export default function Experience() {
         <motion.div variants={item} className={styles.block}>
           <div className={styles.detail}>
             <h3>EduCompanion</h3>
-            <p>Jul 2021 - Nov 2021</p>
+            <p>Jul 2021 - Oct 2021</p>
           </div>
           <p>
             I use Nextjs for all my projects as it is the most advanced
@@ -84,6 +86,12 @@ export default function Experience() {
           </p>
         </motion.div>
       </motion.div>
+      <button
+        onClick={() => window.open("https://bit.ly/3HAo7zf", "blank")}
+        className={styles.resume}
+      >
+        Resume
+      </button>
     </div>
   );
 }

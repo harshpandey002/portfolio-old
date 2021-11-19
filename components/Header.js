@@ -3,6 +3,7 @@ import styles from "@/styles/Header.module.css";
 import ThemeContext from "@/context/ThemeContext";
 import { Spiral as Hamburger } from "hamburger-react";
 import Menu from "./Menu";
+import Link from "next/link";
 
 export default function Header() {
   const { setCursor, setBackground, setFont } = useContext(ThemeContext);
@@ -37,11 +38,22 @@ export default function Header() {
           onMouseOver={mouseOver}
           className={styles.nav_links}
         >
-          <li name="Featured Works">Featured Works</li>
-          <li name="Projects">Projects</li>
-          <li name="Tech Stack">Tech Stack</li>
-          <li name="Experience">Experience</li>
-          <li name="Resume">Contact</li>
+          <li>
+            <Link href="/#work">Featured Work</Link>
+          </li>
+
+          <li>
+            <Link href="/#stack">Tech Stack</Link>
+          </li>
+          <li>
+            <Link href="/#projects">Projects</Link>
+          </li>
+          <li>
+            <Link href="/#experience">Experience</Link>
+          </li>
+          <li>
+            <Link href="/#contact">Contact</Link>
+          </li>
         </ul>
 
         <div className={`${styles.menu} ${isOpen && `${styles.color}`} `}>

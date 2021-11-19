@@ -6,7 +6,9 @@ export default function Footer() {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
-        <h1>Harsh Pandey</h1>
+        <h1>
+          <a id="contact">Harsh Pandey</a>
+        </h1>
       </div>
       <div className={styles.right}>
         <div className={styles.icons}>
