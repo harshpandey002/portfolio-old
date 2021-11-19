@@ -46,11 +46,11 @@ export default function ProjectMob() {
   };
 
   return (
-    <ScrollTrigger onEnter={handleScroll}>
-      <div className={styles.container}>
-        <div className={styles.heading}>
-          <h2>Featured Projects</h2>
-        </div>
+    <div className={styles.container}>
+      <div className={styles.heading}>
+        <h2>Featured Projects</h2>
+      </div>
+      <ScrollTrigger onEnter={handleScroll}>
         <motion.div
           ref={ref}
           initial="initial"
@@ -110,7 +110,7 @@ export default function ProjectMob() {
             </div>
           </motion.div>
         </motion.div>
-      </div>
-    </ScrollTrigger>
+      </ScrollTrigger>
+    </div>
   );
 }
