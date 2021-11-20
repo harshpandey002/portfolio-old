@@ -45,6 +45,7 @@
 }
 
 .resume {
+  display: none;
   border: none;
   outline: none;
   width: 180px;

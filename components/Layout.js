@@ -32,10 +32,10 @@ const Layout = ({ title, keywords, description, children }) => {
 };
 
 Layout.defaultProps = {
-  title: "Sevic | Freelance Agency ",
+  title: "Harsh Pandey ",
   description:
-    "Leading digital agency focused on UI/UX design. We develop complex websites and elaborate online business services.",
-  keywords: "UI/UX, Websites, Branding",
+    "I'm an individual with solid design and development expertise. I build mordern websites with smooth animations and transitions.",
+  keywords: "UI/UX, Website, Freelance, Portfolio, Front-End",
 };
 
 export default Layout;
