@@ -60,7 +60,6 @@
   animation: textAnim 1.3s ease 0.3s normal forwards;
 }
 .word:nth-child(3) h1 {
-  color: black;
   animation: textAnim 1.3s ease 0.4s normal forwards;
 }
 
