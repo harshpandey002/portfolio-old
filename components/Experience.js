@@ -66,8 +66,32 @@ export default function Experience() {
     setCursor({ style });
   };
 
+  const stackOver = () => {
+    const style = {
+      width: "100px",
+      height: "100px",
+      backgroundColor: "white",
+      border: "1px solid lightgray",
+    };
+    const jsx = (
+      <div className="img stack">
+        <img src="https://gcdn.pbrd.co/images/NV30ov81wJCQ.png?o=1" alt="" />
+      </div>
+    );
+    setCursor({ style, jsx });
+  };
+
+  const stackOut = () => {
+    const style = {};
+    setCursor({ style });
+  };
+
   return (
-    <div className={styles.container}>
+    <div
+      onMouseOver={stackOver}
+      onMouseOut={stackOut}
+      className={styles.container}
+    >
       <ScrollTrigger onEnter={handleScroll}>
         <div className={styles.heading}>
           <h2>

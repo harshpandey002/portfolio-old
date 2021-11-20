@@ -61,12 +61,6 @@ export default function Works() {
           <div className={styles.top}>
             <Box
               variants={item}
-              width="25%"
-              height="45vh"
-              src="https://gcdn.pbrd.co/images/77GVE0hX4T3B.png?o=1"
-            />
-            <Box
-              variants={item}
               width="30%"
               height="35vh"
               src="https://gcdn.pbrd.co/images/iEdRPNhrIDHc.png?o=1"
@@ -75,28 +69,34 @@ export default function Works() {
               variants={item}
               width="25%"
               height="45vh"
-              src="https://gcdn.pbrd.co/images/f8WB4JKgUPcW.png?o=1"
+              src="https://gcdn.pbrd.co/images/77GVE0hX4T3B.png?o=1"
             />
             {/* <Box
               variants={item}
-              width="30%"
-              height="35vh"
-              src="https://gcdn.pbrd.co/images/0naEnsad1BTk.png?o=1"
+              width="25%"
+              height="45vh"
+              src="https://gcdn.pbrd.co/images/f8WB4JKgUPcW.png?o=1"
             /> */}
-          </div>
-          <div className={styles.bottom}>
-            {/* <Box
+            <Box
               variants={item}
               width="30%"
               height="35vh"
-              src="https://gcdn.pbrd.co/images/d9nrFrSL5APV.png?o=1"
-            /> */}
+              src="https://gcdn.pbrd.co/images/f8WB4JKgUPcW.png?o=1"
+            />
+          </div>
+          <div className={styles.bottom}>
             <Box
               variants={item}
               width="25%"
               height="45vh"
-              src="https://gcdn.pbrd.co/images/aGaudXoqLun7.png?o=1"
+              src="https://gcdn.pbrd.co/images/9T0AB5MWDjYa.png?o=1"
             />
+            {/* <Box
+              variants={item}
+              width="25%"
+              height="45vh"
+              src="https://gcdn.pbrd.co/images/aGaudXoqLun7.png?o=1"
+            /> */}
             <Box
               variants={item}
               width="30%"
@@ -107,7 +107,7 @@ export default function Works() {
               variants={item}
               width="25%"
               height="45vh"
-              src="https://gcdn.pbrd.co/images/9T0AB5MWDjYa.png?o=1"
+              src="https://gcdn.pbrd.co/images/d9nrFrSL5APV.png?o=1"
             />
           </div>
         </motion.div>

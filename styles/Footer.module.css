@@ -35,6 +35,7 @@
 
 .email a {
   position: relative;
+  cursor: none;
 }
 
 .email a::after {

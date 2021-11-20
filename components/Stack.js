@@ -68,7 +68,11 @@ export default function Stack() {
   };
 
   return (
-    <div className={styles.container}>
+    <div
+      onMouseOver={stackOver}
+      onMouseOut={stackOut}
+      className={styles.container}
+    >
       <ScrollTrigger onEnter={handleColor}>
         <div className={styles.heading}>
           <h2>
@@ -81,8 +85,6 @@ export default function Stack() {
         variants={test}
         initial="initial"
         animate={animation}
-        onMouseOver={stackOver}
-        onMouseOut={stackOut}
         className={styles.content}
       >
         <motion.div variants={item} className={styles.block}>
