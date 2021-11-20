@@ -31,7 +31,6 @@ export default function Header() {
     const style = {
       width: "85px",
       height: "85px",
-      mixBlendMode: "difference",
     };
 
     const jsx = (

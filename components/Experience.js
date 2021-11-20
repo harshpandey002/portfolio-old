@@ -9,7 +9,7 @@ export default function Experience() {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-  const { setBackground, setFont } = useContext(ThemeContext);
+  const { setBackground, setFont, setCursor } = useContext(ThemeContext);
 
   const animation = useAnimation();
 
@@ -44,6 +44,26 @@ export default function Experience() {
   const handleScroll = () => {
     setBackground("white");
     setFont("black");
+  };
+
+  const btnOver = () => {
+    const style = {
+      width: "85px",
+      height: "85px",
+    };
+
+    const jsx = (
+      <div className="img name">
+        <img src="https://gcdn.pbrd.co/images/0FH1nTlCYqJe.png?o=1" alt="" />
+      </div>
+    );
+
+    setCursor({ style, jsx });
+  };
+
+  const btnOut = () => {
+    const style = {};
+    setCursor({ style });
   };
 
   return (
@@ -87,6 +107,8 @@ export default function Experience() {
         </motion.div>
       </motion.div>
       <button
+        onMouseOut={btnOut}
+        onMouseOver={btnOver}
         onClick={() => window.open("https://bit.ly/3HAo7zf", "blank")}
         className={styles.resume}
       >

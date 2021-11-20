@@ -47,7 +47,7 @@ export default function Stack() {
     },
   };
 
-  const logoOver = () => {
+  const stackOver = () => {
     const style = {
       width: "100px",
       height: "100px",
@@ -62,7 +62,7 @@ export default function Stack() {
     setCursor({ style, jsx });
   };
 
-  const logoOut = () => {
+  const stackOut = () => {
     const style = {};
     setCursor({ style });
   };
@@ -81,8 +81,8 @@ export default function Stack() {
         variants={test}
         initial="initial"
         animate={animation}
-        onMouseOver={logoOver}
-        onMouseOut={logoOut}
+        onMouseOver={stackOver}
+        onMouseOut={stackOut}
         className={styles.content}
       >
         <motion.div variants={item} className={styles.block}>
