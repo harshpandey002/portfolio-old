@@ -61,13 +61,13 @@ export default function Works() {
           <div className={styles.top}>
             <Box
               variants={item}
-              width="30%"
+              width="33%"
               height="35vh"
               src="https://gcdn.pbrd.co/images/iEdRPNhrIDHc.png?o=1"
             />
             <Box
               variants={item}
-              width="25%"
+              width="33%"
               height="45vh"
               src="https://gcdn.pbrd.co/images/77GVE0hX4T3B.png?o=1"
             />
@@ -79,7 +79,7 @@ export default function Works() {
             /> */}
             <Box
               variants={item}
-              width="30%"
+              width="33%"
               height="35vh"
               src="https://gcdn.pbrd.co/images/f8WB4JKgUPcW.png?o=1"
             />
@@ -87,7 +87,7 @@ export default function Works() {
           <div className={styles.bottom}>
             <Box
               variants={item}
-              width="25%"
+              width="33%"
               height="45vh"
               src="https://gcdn.pbrd.co/images/9T0AB5MWDjYa.png?o=1"
             />
@@ -99,13 +99,13 @@ export default function Works() {
             /> */}
             <Box
               variants={item}
-              width="30%"
+              width="33%"
               height="35vh"
               src="https://gcdn.pbrd.co/images/fQ5NKyssw0Mh.png?o=1"
             />
             <Box
               variants={item}
-              width="25%"
+              width="33%"
               height="45vh"
               src="https://gcdn.pbrd.co/images/d9nrFrSL5APV.png?o=1"
             />
