@@ -112,10 +112,10 @@ export default function Experience() {
             <p>Jul 2021 - Oct 2021</p>
           </div>
           <p>
-            Collaborated remotely with this international company from spain.
-            EduCompanion is a platform for learners which provides the exact
-            pathway to excel in a perticular feild. As a freelance developer, I
-            designed and developed Front-End of the platform.
+            Remotely collaborated with this international corporation based in
+            Spain. EduCompanion is a learning platform that shows students how
+            to thrive in a specific field. I designed and developed the platform
+            {"'"}s front-end as a freelance developer.
           </p>
         </motion.div>
         <motion.div variants={item} className={styles.block}>
@@ -124,9 +124,10 @@ export default function Experience() {
             <p>Sep 2021 - Nov 2021</p>
           </div>
           <p>
-            Designed and Developed a mentoring platform which solved the
-            business problem of reserving slots for b2b. Beyond Pinks is a
-            company situated in Hyderabad which focuses on Women Empowerment.
+            Designed and developed a mentorship platform that solves the
+            business problem of reserving slots for business-to-business
+            meetings. Beyond Pinks is a Hyderabad-based organisation dedicated
+            to women{"'"}s empowerment.
           </p>
         </motion.div>
       </motion.div>

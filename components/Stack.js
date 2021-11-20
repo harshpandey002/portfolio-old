@@ -90,18 +90,19 @@ export default function Stack() {
         <motion.div variants={item} className={styles.block}>
           <h3>Front-End</h3>
           <p>
-            I use Nextjs for all my projects as it is the most advanced
-            technology out there right now. Nextjs is a framework of Reactjs,
-            which supports server side rendering make the website super fast and
-            enhances user experience.
+            I use Nextjs for all of my projects since it is currently the most
+            advanced technology available. Nextjs is a Reactjs framework that
+            enables the server-side rendering, which speeds up the website and
+            improves the user experience.
           </p>
         </motion.div>
         <motion.div variants={item} className={styles.block}>
           <h3>Back-End</h3>
           <p>
-            I use Nodejs, Expressjs and Mongoose as my back-end technologies.
-            They are most popular technologies for backend. Mongoose provides
-            seemless integration with MongoDb which is a very secure database.
+            My back-end technologies include Nodejs, Expressjs, and Mongoose.
+            They are the most widely used backend technology. Mongoose
+            integrates seamlessly with MongoDb, which is a highly secure
+            database.
           </p>
         </motion.div>
       </motion.div>
