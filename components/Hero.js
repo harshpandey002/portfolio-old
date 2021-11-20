@@ -45,6 +45,10 @@ export default function Hero() {
 
   return (
     <div className={styles.container}>
+      <div className={styles.img}>
+        <img src="https://gcdn.pbrd.co/images/B3oH3HGGrckK.jpg?o=1" alt="" />
+      </div>
+
       <div className={styles.content}>
         <div ref={ref} className={styles.top}>
           <div
