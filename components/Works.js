@@ -77,20 +77,20 @@ export default function Works() {
               height="45vh"
               src="https://gcdn.pbrd.co/images/f8WB4JKgUPcW.png?o=1"
             />
-            <Box
+            {/* <Box
               variants={item}
               width="30%"
               height="35vh"
               src="https://gcdn.pbrd.co/images/0naEnsad1BTk.png?o=1"
-            />
+            /> */}
           </div>
           <div className={styles.bottom}>
-            <Box
+            {/* <Box
               variants={item}
               width="30%"
               height="35vh"
               src="https://gcdn.pbrd.co/images/d9nrFrSL5APV.png?o=1"
-            />
+            /> */}
             <Box
               variants={item}
               width="25%"

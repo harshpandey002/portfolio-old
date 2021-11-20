@@ -35,7 +35,7 @@ export default function Header() {
 
     const jsx = (
       <div className="img name">
-        <img src="https://gcdn.pbrd.co/images/MS1FveSdE55L.webp?o=1" alt="" />
+        <img src="https://gcdn.pbrd.co/images/B3oH3HGGrckK.jpg?o=1" alt="" />
       </div>
     );
 
@@ -57,8 +57,8 @@ export default function Header() {
           <h1>Harsh Pandey</h1>
         </div>
         <div
-          onMouseOver={(e) => logoOver(e)}
-          onMouseOut={(e) => logoOut(e)}
+          onMouseOver={logoOver}
+          onMouseOut={logoOut}
           className={`${styles.logo} ${!isOpen && `${styles.opacity}`}`}
         >
           <h1>Harsh Pandey</h1>
