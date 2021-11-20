@@ -29,14 +29,14 @@ export default function Header() {
   const logoOver = (e) => {
     e.target.style.color = "white";
     const style = {
-      width: "55px",
-      height: "55px",
+      width: "85px",
+      height: "85px",
       mixBlendMode: "difference",
     };
 
     const jsx = (
       <div className="img name">
-        <img src="https://source.unsplash.com/random/300x300" alt="" />
+        <img src="https://gcdn.pbrd.co/images/MS1FveSdE55L.webp?o=1" alt="" />
       </div>
     );
 

@@ -17,6 +17,7 @@
 
 .logo {
   z-index: 1001;
+  cursor: none;
 }
 
 .logo h1 {
