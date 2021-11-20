@@ -34,8 +34,7 @@ const Layout = ({ title, keywords, description, children }) => {
 Layout.defaultProps = {
   title: "Harsh Pandey ",
   description:
-    "I'm an individual with solid design and development expertise. I build mordern websites with smooth animations and transitions.",
-  keywords: "UI/UX, Website, Freelance, Portfolio, Front-End",
+    "I'm a professional with a strong background in design and development. I create cutting-edge websites with fluid animations and transitions.",
 };
 
 export default Layout;

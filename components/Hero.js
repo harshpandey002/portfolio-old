@@ -5,7 +5,7 @@ import styles from "@/styles/Hero.module.css";
 
 export default function Hero() {
   const smallTxt =
-    "I’m an individual with solid design and development expertise. I build mordern websites with smooth animations and transitions.";
+    "I'm a professional with a strong background in design and development. I create cutting-edge websites with fluid animations and transitions.";
   const bigTxt = "UI / UX Designer. Web Developer. Freelancer.";
   let i = -1;
   const { setBackground, setFont, setCursor } = useContext(ThemeContext);
