@@ -18,6 +18,7 @@
 .logo,
 .white {
   cursor: none;
+  z-index: 100;
 }
 
 .logo {
@@ -26,7 +27,6 @@
 
 .white {
   opacity: 0;
-  z-index: 100;
   position: fixed;
 }
 
@@ -47,6 +47,7 @@
 
 .nav_links {
   list-style: none;
+  cursor: none;
 }
 
 .nav_links li {
@@ -74,7 +75,7 @@
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
