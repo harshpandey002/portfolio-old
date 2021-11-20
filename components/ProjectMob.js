@@ -72,57 +72,57 @@ export default function ProjectMob() {
             </p>
           </div>
         </motion.div>
-        <ScrollTrigger onEnter={handleScroll}>
-          <motion.div variants={item} className={styles.project}>
-            <div className={styles.img}>
-              <img
-                src="https://gcdn.pbrd.co/images/gMD1SxB1XyPl.png?o=1"
-                alt=""
-              />
-            </div>
-            <div className={styles.desc}>
-              <h2>EduCompanion</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Provident doloribus aspernatur laudantium sed pariatur aliquam,
-                facilis tempora. Quaerat, architecto asperiores.
-              </p>
-            </div>
-          </motion.div>
-          <motion.div variants={item} className={styles.project}>
-            <div className={styles.img}>
-              <img
-                src="https://gcdn.pbrd.co/images/uQG5L6yuIZMu.png?o=1"
-                alt=""
-              />
-            </div>
-            <div className={styles.desc}>
-              <h2>Beyond Pinks</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Provident doloribus aspernatur laudantium sed pariatur aliquam,
-                facilis tempora. Quaerat, architecto asperiores.
-              </p>
-            </div>
-          </motion.div>
+        {/* <ScrollTrigger onEnter={handleScroll}> */}
+        <motion.div variants={item} className={styles.project}>
+          <div className={styles.img}>
+            <img
+              src="https://gcdn.pbrd.co/images/gMD1SxB1XyPl.png?o=1"
+              alt=""
+            />
+          </div>
+          <div className={styles.desc}>
+            <h2>EduCompanion</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Provident doloribus aspernatur laudantium sed pariatur aliquam,
+              facilis tempora. Quaerat, architecto asperiores.
+            </p>
+          </div>
+        </motion.div>
+        <motion.div variants={item} className={styles.project}>
+          <div className={styles.img}>
+            <img
+              src="https://gcdn.pbrd.co/images/uQG5L6yuIZMu.png?o=1"
+              alt=""
+            />
+          </div>
+          <div className={styles.desc}>
+            <h2>Beyond Pinks</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Provident doloribus aspernatur laudantium sed pariatur aliquam,
+              facilis tempora. Quaerat, architecto asperiores.
+            </p>
+          </div>
+        </motion.div>
 
-          <motion.div variants={item} className={styles.project}>
-            <div className={styles.img}>
-              <img
-                src="https://gcdn.pbrd.co/images/cL062BmA76zg.png?o=1"
-                alt=""
-              />
-            </div>
-            <div className={styles.desc}>
-              <h2>E-Medic</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Provident doloribus aspernatur laudantium sed pariatur aliquam,
-                facilis tempora. Quaerat, architecto asperiores.
-              </p>
-            </div>
-          </motion.div>
-        </ScrollTrigger>
+        <motion.div variants={item} className={styles.project}>
+          <div className={styles.img}>
+            <img
+              src="https://gcdn.pbrd.co/images/cL062BmA76zg.png?o=1"
+              alt=""
+            />
+          </div>
+          <div className={styles.desc}>
+            <h2>E-Medic</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Provident doloribus aspernatur laudantium sed pariatur aliquam,
+              facilis tempora. Quaerat, architecto asperiores.
+            </p>
+          </div>
+        </motion.div>
+        {/* </ScrollTrigger> */}
 
         <motion.div variants={item} className={styles.project}>
           <div className={styles.img}>
