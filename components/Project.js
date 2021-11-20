@@ -133,7 +133,7 @@ export default function Project() {
       <div className={styles.content}>
         <div className={styles.left}>
           <h3>
-            <a id="projects">Featured Projects</a>
+            <a id="project">Featured Projects</a>
           </h3>
           <motion.ul
             ref={ref}

@@ -75,7 +75,9 @@ export default function ProjectMob() {
   return (
     <div className={styles.container}>
       <div className={styles.heading}>
-        <h2>Featured Projects</h2>
+        <h2>
+          <a id="projects">Featured Projects</a>
+        </h2>
       </div>
       <motion.div
         ref={ref}

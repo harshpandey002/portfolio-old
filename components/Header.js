@@ -75,7 +75,7 @@ export default function Header() {
             <Link href="/#stack">Tech Stack</Link>
           </li>
           <li>
-            <Link href="/#projects">Projects</Link>
+            <Link href="/#project">Projects</Link>
           </li>
           <li>
             <Link href="/#experience">Experience</Link>
