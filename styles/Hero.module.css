@@ -24,6 +24,7 @@
   justify-content: center;
   height: 350px;
   overflow: hidden;
+  cursor: none;
 }
 
 .word:nth-child(2) {
@@ -47,10 +48,6 @@
 
 .word h1 span {
   font-size: 5vw;
-}
-
-.word h1:hover {
-  color: initial;
 }
 
 .word:nth-child(1) h1 {
