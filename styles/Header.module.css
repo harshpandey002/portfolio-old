@@ -1,6 +1,5 @@
 .container {
   /* background-color: #cccccc; */
-  position: fixed;
   top: 5%;
   left: 0;
   width: 100%;
@@ -15,15 +14,34 @@
   justify-content: space-between;
 }
 
-.logo {
-  z-index: 1001;
+.logo,
+.white {
   cursor: none;
 }
 
-.logo h1 {
+.logo {
+  opacity: 0;
+}
+
+.white {
+  opacity: 0;
+  z-index: 100;
+  position: fixed;
+}
+
+.opacity {
+  opacity: 1;
+}
+
+.logo h1,
+.white h1 {
   font-family: var(--font);
   font-size: 2rem;
   transition: color 0.3s;
+}
+
+.white h1 {
+  color: white !important;
 }
 
 .nav_links {
@@ -46,6 +64,8 @@
   display: none;
   z-index: 10;
   transition: color 0.3s;
+  position: fixed;
+  right: 10%;
 }
 
 .color {

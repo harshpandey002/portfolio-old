@@ -53,10 +53,13 @@ export default function Header() {
   return (
     <div className={styles.container}>
       <nav>
+        <div className={`${styles.white} ${isOpen && `${styles.opacity}`}`}>
+          <h1>Harsh Pandey</h1>
+        </div>
         <div
           onMouseOver={(e) => logoOver(e)}
           onMouseOut={(e) => logoOut(e)}
-          className={styles.logo}
+          className={`${styles.logo} ${!isOpen && `${styles.opacity}`}`}
         >
           <h1>Harsh Pandey</h1>
         </div>
