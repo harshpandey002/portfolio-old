@@ -216,6 +216,49 @@
   }
 }
 
+.modal {
+  background-color: white;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: all 0.5s;
+  z-index: 10;
+  cursor: none;
+}
+
+.open {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.worker {
+  width: 100%;
+  max-width: 900px;
+}
+
+.worker img {
+  width: 100%;
+}
+
+.info {
+  width: 100%;
+  text-align: center;
+}
+
+.info h2 {
+  width: 100%;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
 @media only screen and (max-width: 1320px) {
   .content {
     width: 90%;

@@ -37,6 +37,7 @@ const source = [
 export default function Project() {
   const [src, setSrc] = useState(source[0]);
   const { setBackground, setFont, setCursor } = useContext(ThemeContext);
+  const [isOpen, setIsOpen] = useState(false);
 
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -128,6 +129,11 @@ export default function Project() {
     setCursor({ style });
   };
 
+  const handleOpen = (e) => {
+    mouseOut(e);
+    setIsOpen(true);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -136,6 +142,7 @@ export default function Project() {
             <a id="project">Featured Projects</a>
           </h3>
           <motion.ul
+            onClick={handleOpen}
             ref={ref}
             variants={test}
             initial="initial"
@@ -182,6 +189,7 @@ export default function Project() {
         {!!src.three ? <ThreeImage src={src} /> : <TwoImage src={src} />}
         {/* {!src.one && <OneImage />} */}
       </div>
+      <Popup isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 }
@@ -237,3 +245,48 @@ const ThreeImage = ({ src }) => {
 //     </div>
 //   );
 // };
+
+const Popup = ({ isOpen, setIsOpen }) => {
+  const { setCursor } = useContext(ThemeContext);
+
+  const mouseOver = () => {
+    const style = {
+      width: "30px",
+      height: "30px",
+    };
+    const jsx = (
+      <div className="test">
+        <p>Close</p>
+      </div>
+    );
+
+    setCursor({ style, jsx });
+  };
+
+  const mouseOut = () => {
+    const style = {};
+
+    setCursor({ style });
+  };
+
+  const handleClose = () => {
+    mouseOut();
+    setIsOpen(false);
+  };
+
+  return (
+    <div
+      onMouseOver={mouseOver}
+      onMouseOut={mouseOut}
+      onClick={handleClose}
+      className={`${styles.modal} ${isOpen && `${styles.open}`} `}
+    >
+      <div className={styles.worker}>
+        <img src="https://gcdn.pbrd.co/images/huskiyaAViod.png?o=1" alt="" />
+      </div>
+      <div className={styles.info}>
+        <h2>This page is under development.</h2>
+      </div>
+    </div>
+  );
+};

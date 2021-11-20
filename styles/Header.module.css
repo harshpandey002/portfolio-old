@@ -23,6 +23,7 @@
 
 .logo {
   opacity: 0;
+  height: max-content;
 }
 
 .white {
