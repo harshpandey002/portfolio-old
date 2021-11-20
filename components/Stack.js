@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
 export default function Stack() {
-  const { setBackground, setFont } = useContext(ThemeContext);
+  const { setBackground, setFont, setCursor } = useContext(ThemeContext);
 
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -47,6 +47,26 @@ export default function Stack() {
     },
   };
 
+  const logoOver = () => {
+    const style = {
+      width: "100px",
+      height: "100px",
+      backgroundColor: "white",
+      border: "1px solid lightgray",
+    };
+    const jsx = (
+      <div className="img stack">
+        <img src="https://gcdn.pbrd.co/images/VzFj9aFziE29.png?o=1" alt="" />
+      </div>
+    );
+    setCursor({ style, jsx });
+  };
+
+  const logoOut = () => {
+    const style = {};
+    setCursor({ style });
+  };
+
   return (
     <div className={styles.container}>
       <ScrollTrigger onEnter={handleColor}>
@@ -61,6 +81,8 @@ export default function Stack() {
         variants={test}
         initial="initial"
         animate={animation}
+        onMouseOver={logoOver}
+        onMouseOut={logoOut}
         className={styles.content}
       >
         <motion.div variants={item} className={styles.block}>

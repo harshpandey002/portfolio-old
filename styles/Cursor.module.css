@@ -3,7 +3,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 1000;
+  z-index: 100;
   width: var(--radius);
   height: var(--radius);
   transform: translate(-50%, -50%) scale(2);

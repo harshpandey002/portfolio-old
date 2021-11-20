@@ -26,10 +26,39 @@ export default function Header() {
     setCursor({ style });
   };
 
+  const logoOver = (e) => {
+    e.target.style.color = "white";
+    const style = {
+      width: "55px",
+      height: "55px",
+      mixBlendMode: "difference",
+    };
+
+    const jsx = (
+      <div className="img name">
+        <img src="https://source.unsplash.com/random/300x300" alt="" />
+      </div>
+    );
+
+    setCursor({ style, jsx });
+  };
+
+  const logoOut = (e) => {
+    e.target.style.color = "";
+
+    const style = {};
+
+    setCursor({ style });
+  };
+
   return (
     <div className={styles.container}>
       <nav>
-        <div className={styles.logo}>
+        <div
+          onMouseOver={(e) => logoOver(e)}
+          onMouseOut={(e) => logoOut(e)}
+          className={styles.logo}
+        >
           <h1>Harsh Pandey</h1>
         </div>
 

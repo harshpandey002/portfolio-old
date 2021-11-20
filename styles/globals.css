@@ -64,3 +64,24 @@ a {
   color: white;
   font-size: 0.5rem;
 }
+
+.img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  width: 55px;
+  height: 55px;
+}
+
+.stack {
+  width: 100px;
+  height: 100px;
+}
