@@ -8,27 +8,27 @@ const projectjs = [
   {
     name: "Piggy",
     image: "https://gcdn.pbrd.co/images/IY3T3VQ35Bp0.png?o=1",
-    desc: "lorem ipsum sonort sdfsd fds fsejdnfcwesurif hwensdiukfjc shdifuah frdyugfhbveru sfgeryhfb ",
+    desc: "Piggy is a money tracking application. This app helps user to track the flow of money with the help of budget feature. This app also motivates user to save money by displaying future projections of account balance with accurate calcutaions based on transactions by user.",
   },
   {
     name: "EduCompanion",
     image: "https://gcdn.pbrd.co/images/gMD1SxB1XyPl.png?o=1",
-    desc: "lorem ipsum sonort sdfsd fds fsejdnfcwesurif hwensdiukfjc shdifuah frdyugfhbveru sfgeryhfb ",
+    desc: "A platform for learners where they get exact pathway to excel in the field of their choice. This app list out all the skills, job details, salary, etc. along with exact courses they need to learn in order to master the feild.",
   },
   {
     name: "Beyond Pinks",
     image: "https://gcdn.pbrd.co/images/uQG5L6yuIZMu.png?o=1",
-    desc: "lorem ipsum sonort sdfsd fds fsejdnfcwesurif hwensdiukfjc shdifuah frdyugfhbveru sfgeryhfb ",
+    desc: "A mentoring platform for women where they can book meetings with mentors who have 10 years of corporate leadership expertise and experience. This app provides a very smooth experience from signing up, to booking slot with the mentor.",
   },
   {
     name: "E-Medic",
     image: "https://gcdn.pbrd.co/images/cL062BmA76zg.png?o=1",
-    desc: "lorem ipsum sonort sdfsd fds fsejdnfcwesurif hwensdiukfjc shdifuah frdyugfhbveru sfgeryhfb ",
+    desc: "A concept design for an application where patients can interact with doctors instantly and download the prescription once the payment is completed.",
   },
   {
     name: "Protege",
     image: "https://gcdn.pbrd.co/images/HsW8sG90M19P.png?o=1",
-    desc: "lorem ipsum sonort sdfsd fds fsejdnfcwesurif hwensdiukfjc shdifuah frdyugfhbveru sfgeryhfb ",
+    desc: "A chatting platform for college students where a junior can get instant help with their senior, who is registered in that platform as a mentor.",
   },
 ];
 
