@@ -112,10 +112,10 @@ export default function Experience() {
             <p>Jul 2021 - Oct 2021</p>
           </div>
           <p>
-            I use Nextjs for all my projects as it is the most advanced
-            technology out there right now. Nextjs is a framework of Reactjs,
-            which supports server side rendering make the website super fast and
-            enhances user experience.
+            Collaborated remotely with this international company from spain.
+            EduCompanion is a platform for learners which provides the exact
+            pathway to excel in a perticular feild. As a freelance developer, I
+            designed and developed Front-End of the platform.
           </p>
         </motion.div>
         <motion.div variants={item} className={styles.block}>
@@ -124,9 +124,9 @@ export default function Experience() {
             <p>Sep 2021 - Nov 2021</p>
           </div>
           <p>
-            I use Nodejs, Expressjs and Mongoose as my back-end technologies.
-            They are most popular technologies for backend. Mongoose provides
-            seemless integration with MongoDb which is a very secure database.
+            Designed and Developed a mentoring platform which solved the
+            business problem of reserving slots for b2b. Beyond Pinks is a
+            company situated in Hyderabad which focuses on Women Empowerment.
           </p>
         </motion.div>
       </motion.div>
