@@ -68,7 +68,7 @@ export default function Project() {
     },
     animate: {
       y: 0,
-      transition: { duration: 0.5, type: "ease-out" },
+      transition: { duration: 0, type: "tween" },
     },
   };
 

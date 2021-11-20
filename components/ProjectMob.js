@@ -50,67 +50,97 @@ export default function ProjectMob() {
       <div className={styles.heading}>
         <h2>Featured Projects</h2>
       </div>
-      <ScrollTrigger onEnter={handleScroll}>
-        <motion.div
-          ref={ref}
-          initial="initial"
-          animate={animation}
-          className={styles.content}
-        >
-          <motion.div variants={item} className={styles.project}>
-            <div className={styles.img}>
-              <img src="https://source.unsplash.com/random/600x450" alt="" />
-            </div>
-            <div className={styles.desc}>
-              <h2>Project name</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Provident doloribus aspernatur laudantium sed pariatur aliquam,
-                facilis tempora. Quaerat, architecto asperiores.
-              </p>
-            </div>
-          </motion.div>
-          <motion.div variants={item} className={styles.project}>
-            <div className={styles.img}>
-              <img src="https://source.unsplash.com/random/601x420" alt="" />
-            </div>
-            <div className={styles.desc}>
-              <h2>Project name</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Provident doloribus aspernatur laudantium sed pariatur aliquam,
-                facilis tempora. Quaerat, architecto asperiores.
-              </p>
-            </div>
-          </motion.div>
-          <motion.div variants={item} className={styles.project}>
-            <div className={styles.img}>
-              <img src="https://source.unsplash.com/random/601x440" alt="" />
-            </div>
-            <div className={styles.desc}>
-              <h2>Project name</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Provident doloribus aspernatur laudantium sed pariatur aliquam,
-                facilis tempora. Quaerat, architecto asperiores.
-              </p>
-            </div>
-          </motion.div>
-          <motion.div variants={item} className={styles.project}>
-            <div className={styles.img}>
-              <img src="https://source.unsplash.com/random/611x450" alt="" />
-            </div>
-            <div className={styles.desc}>
-              <h2>Project name</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Provident doloribus aspernatur laudantium sed pariatur aliquam,
-                facilis tempora. Quaerat, architecto asperiores.
-              </p>
-            </div>
-          </motion.div>
+      <motion.div
+        ref={ref}
+        initial="initial"
+        animate={animation}
+        className={styles.content}
+      >
+        <motion.div variants={item} className={styles.project}>
+          <div className={styles.img}>
+            <img
+              src="https://gcdn.pbrd.co/images/IY3T3VQ35Bp0.png?o=1"
+              alt=""
+            />
+          </div>
+          <div className={styles.desc}>
+            <h2>Piggy</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Provident doloribus aspernatur laudantium sed pariatur aliquam,
+              facilis tempora. Quaerat, architecto asperiores.
+            </p>
+          </div>
         </motion.div>
-      </ScrollTrigger>
+        <ScrollTrigger onEnter={handleScroll}>
+          <motion.div variants={item} className={styles.project}>
+            <div className={styles.img}>
+              <img
+                src="https://gcdn.pbrd.co/images/gMD1SxB1XyPl.png?o=1"
+                alt=""
+              />
+            </div>
+            <div className={styles.desc}>
+              <h2>EduCompanion</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Provident doloribus aspernatur laudantium sed pariatur aliquam,
+                facilis tempora. Quaerat, architecto asperiores.
+              </p>
+            </div>
+          </motion.div>
+          <motion.div variants={item} className={styles.project}>
+            <div className={styles.img}>
+              <img
+                src="https://gcdn.pbrd.co/images/uQG5L6yuIZMu.png?o=1"
+                alt=""
+              />
+            </div>
+            <div className={styles.desc}>
+              <h2>Beyond Pinks</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Provident doloribus aspernatur laudantium sed pariatur aliquam,
+                facilis tempora. Quaerat, architecto asperiores.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div variants={item} className={styles.project}>
+            <div className={styles.img}>
+              <img
+                src="https://gcdn.pbrd.co/images/cL062BmA76zg.png?o=1"
+                alt=""
+              />
+            </div>
+            <div className={styles.desc}>
+              <h2>E-Medic</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Provident doloribus aspernatur laudantium sed pariatur aliquam,
+                facilis tempora. Quaerat, architecto asperiores.
+              </p>
+            </div>
+          </motion.div>
+        </ScrollTrigger>
+
+        <motion.div variants={item} className={styles.project}>
+          <div className={styles.img}>
+            <img
+              src="https://gcdn.pbrd.co/images/HsW8sG90M19P.png?o=1"
+              alt=""
+            />
+          </div>
+          <div className={styles.desc}>
+            <h2>Protege</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Provident doloribus aspernatur laudantium sed pariatur aliquam,
+              facilis tempora. Quaerat, architecto asperiores.
+            </p>
+          </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }
