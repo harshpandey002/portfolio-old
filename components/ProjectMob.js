@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import styles from "@/styles/ProjectMob.module.css";
 import ThemeContext from "@/context/ThemeContext";
 import { useInView } from "react-intersection-observer";
@@ -94,15 +94,6 @@ export default function ProjectMob() {
 }
 
 const ProjectCard = ({ variants, project }) => {
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <motion.div variants={variants} className={styles.project}>
       <div className={styles.img}>
