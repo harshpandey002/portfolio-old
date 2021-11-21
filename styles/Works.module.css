@@ -29,7 +29,6 @@
   /* width: 130%; */
   text-orientation: mixed;
   writing-mode: vertical-lr;
-  transform: rotate(180deg);
   opacity: 0;
   animation: delayAnim 0.8s ease 1.4s normal forwards;
 }

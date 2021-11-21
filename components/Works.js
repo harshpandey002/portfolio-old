@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import styles from "@/styles/Works.module.css";
-import { Parallax } from "react-scroll-parallax";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -40,17 +39,29 @@ export default function Works() {
     },
   };
 
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.scroller} />
-        <Parallax y={[-65, 15]}>
-          <div className={styles.heading}>
-            <h1>
-              <a id="work">Featured Works</a>
-            </h1>
-          </div>
-        </Parallax>
+        <div
+          style={{
+            transform: `translateY(${offsetY * 0.35 - 450}px) rotate(180deg)`,
+          }}
+          className={styles.heading}
+        >
+          <h1>
+            <a id="work">Featured Works</a>
+          </h1>
+        </div>
         <motion.div
           ref={ref}
           variants={test}

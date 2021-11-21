@@ -234,10 +234,10 @@
   cursor: none;
 }
 
-.open {
+/* .open {
   pointer-events: all;
   opacity: 1;
-}
+} */
 
 .worker {
   width: 100%;
