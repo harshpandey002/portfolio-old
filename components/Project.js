@@ -223,7 +223,7 @@ const Popup = ({ isOpen, setIsOpen }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{opacity: 1}}
+      animate={{ opacity: 1 }}
       onMouseOver={mouseOver}
       onMouseOut={mouseOut}
       onClick={handleClose}
@@ -235,7 +235,7 @@ const Popup = ({ isOpen, setIsOpen }) => {
       <div className={styles.info}>
         <h2>This page is under development.</h2>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
