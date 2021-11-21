@@ -59,11 +59,11 @@ export default function ProjectMob() {
 
   const item = {
     initial: {
-      y: "100%",
+      y: 100,
     },
     animate: {
       y: 0,
-      transition: { duration: 0.5, type: "ease-out" },
+      transition: { duration: 0.8, type: "ease-out" },
     },
   };
 
@@ -81,6 +81,7 @@ export default function ProjectMob() {
       </div>
       <motion.div
         ref={ref}
+        variants={test}
         initial="initial"
         animate={animation}
         className={styles.content}
