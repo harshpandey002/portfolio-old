@@ -51,7 +51,6 @@ export default function Works() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.scroller} />
         <div
           style={{
             transform: `translateY(${offsetY * 0.35 - 450}px) rotate(180deg)`,

@@ -4,6 +4,7 @@ import ThemeContext from "@/context/ThemeContext";
 import { Spiral as Hamburger } from "hamburger-react";
 import Menu from "./Menu";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const { setCursor, setBackground, setFont } = useContext(ThemeContext);
@@ -51,7 +52,12 @@ export default function Header() {
   };
 
   return (
-    <div className={styles.container}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1.2 }}
+      className={styles.container}
+    >
       <nav>
         <div className={`${styles.white} ${isOpen && `${styles.opacity}`}`}>
           <h1>Harsh Pandey</h1>
@@ -96,6 +102,6 @@ export default function Header() {
         onClick={() => setIsOpen(false)}
         className={`${styles.overlay} ${isOpen && `${styles.active}`} `}
       />
-    </div>
+    </motion.div>
   );
 }
