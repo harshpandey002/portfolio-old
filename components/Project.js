@@ -189,10 +189,55 @@ export default function Project() {
         {!!src.three ? <ThreeImage src={src} /> : <TwoImage src={src} />}
         {/* {!src.one && <OneImage />} */}
       </div>
-      <Popup isOpen={isOpen} setIsOpen={setIsOpen} />
+      {isOpen && <Popup isOpen={isOpen} setIsOpen={setIsOpen} />}
     </div>
   );
 }
+
+const Popup = ({ isOpen, setIsOpen }) => {
+  const { setCursor } = useContext(ThemeContext);
+
+  const mouseOver = () => {
+    const style = {
+      width: "30px",
+      height: "30px",
+    };
+    const jsx = (
+      <div className="test">
+        <p>Close</p>
+      </div>
+    );
+    setCursor({ style, jsx });
+  };
+
+  const mouseOut = () => {
+    const style = {};
+    setCursor({ style });
+  };
+
+  const handleClose = () => {
+    mouseOut();
+    setIsOpen(false);
+  };
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{opacity: 1}}
+      onMouseOver={mouseOver}
+      onMouseOut={mouseOut}
+      onClick={handleClose}
+      className={styles.modal}
+    >
+      <div className={styles.worker}>
+        <img src="https://gcdn.pbrd.co/images/huskiyaAViod.png?o=1" alt="" />
+      </div>
+      <div className={styles.info}>
+        <h2>This page is under development.</h2>
+      </div>
+    </div>
+  );
+};
 
 const TwoImage = ({ src }) => {
   return (
@@ -245,48 +290,3 @@ const ThreeImage = ({ src }) => {
 //     </div>
 //   );
 // };
-
-const Popup = ({ isOpen, setIsOpen }) => {
-  const { setCursor } = useContext(ThemeContext);
-
-  const mouseOver = () => {
-    const style = {
-      width: "30px",
-      height: "30px",
-    };
-    const jsx = (
-      <div className="test">
-        <p>Close</p>
-      </div>
-    );
-
-    setCursor({ style, jsx });
-  };
-
-  const mouseOut = () => {
-    const style = {};
-
-    setCursor({ style });
-  };
-
-  const handleClose = () => {
-    mouseOut();
-    setIsOpen(false);
-  };
-
-  return (
-    <div
-      onMouseOver={mouseOver}
-      onMouseOut={mouseOut}
-      onClick={handleClose}
-      className={`${styles.modal} ${isOpen && `${styles.open}`} `}
-    >
-      <div className={styles.worker}>
-        <img src="https://gcdn.pbrd.co/images/huskiyaAViod.png?o=1" alt="" />
-      </div>
-      <div className={styles.info}>
-        <h2>This page is under development.</h2>
-      </div>
-    </div>
-  );
-};
