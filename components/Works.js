@@ -15,7 +15,7 @@ export default function Works() {
     } else {
       animation.start("initial");
     }
-  });
+  }, [inView]);
 
   const test = {
     initial: {
