@@ -1,5 +1,6 @@
 .container {
   height: 100vh;
+  min-height: 740px;
   display: flex;
   align-items: flex-end;
   /* background-color: #121212; */
