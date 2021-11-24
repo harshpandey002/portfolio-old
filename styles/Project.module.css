@@ -1,6 +1,6 @@
 .container {
   height: 100vh;
-  /* min-height: 700px; */
+  min-height: 740px;
   display: flex;
   align-items: flex-end;
   padding-bottom: 4.5rem;
